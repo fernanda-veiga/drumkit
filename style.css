@@ -16,12 +16,20 @@ body {
 
 .title {
     width: 400px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     color: #F5F5F5;
     font-size: 70px;
     font-family: 'Pacifico', cursive;
+}
+
+.instructions {
+    width: 400px;
+    margin-bottom: 30px;
+    color: #F5F5F5;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -41,6 +49,7 @@ body {
     border-radius: 50%;
     outline: none;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .key {
