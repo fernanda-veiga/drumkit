@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#container {
+
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    background-color: #484848;
+    border: 10px solid #FFD700;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
