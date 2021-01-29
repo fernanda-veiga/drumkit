@@ -59,7 +59,7 @@ body {
     outline: none;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
-    transition: box-shadow 0.3s;
+    transition: all 0.3s;
     /*transition: transform 0.05s;*/
 }
 
@@ -69,6 +69,8 @@ body {
 
 .clicked {
     transform: scale(1.1);
+    border: 10px solid #ff0000;
+    box-shadow: 0 0 20px #ff0000;
 }
 
 .key {
