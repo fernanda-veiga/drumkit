@@ -14,8 +14,8 @@ body {
 }
 
 .container {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,8 +23,8 @@ body {
 }
 
 .button {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: #484848;
     border: 10px solid #FFD700;
     border-radius: 50%;
