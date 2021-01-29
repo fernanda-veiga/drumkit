@@ -17,14 +17,20 @@ let keys = ["a", "s", "d", "f", "g", "h", "j", "k", "l"];
 //Play sound when the button is clicked
 buttons.forEach(item => {
     item.addEventListener("click", function(){
-        playSound(item);
+        playSound(buttons, item);
     })
 })
 
-function playSound(item) {
-    let index = buttons.indexOf(item);
-    audioFiles[index].currentTime = 0;
-    audioFiles[index].play();
+//Play sound when key is pressed
+window.addEventListener("keydown", function(e){
+    playSound(keys, e.key);
+});
+
+//FUNCTION
+function playSound(array, item) {
+    let i = array.indexOf(item);
+    audioFiles[i].currentTime = 0;
+    audioFiles[i].play();
     return;
 }
     /*
@@ -42,18 +48,7 @@ function playSound(item) {
     });
 }*/
 
-//Play sound when key is pressed
-window.addEventListener("keydown", function(e){
-    for (let i = 0; i < keys.length; i++) {
-        if (e.key == keys[i]) {
-            audioFiles[i].currentTime = 0;
-            audioFiles[i].play();
-            buttons[i].classList.add("clicked");
-            /*buttons[i].classList.remove("clicked");*/
-        }
-    }
-    return;
-});
+
 
 //FUNCTIONS
 /*function playSound(i) {
