@@ -9,13 +9,24 @@ body {
     height: 100vh;
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.title {
+    width: 400px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    color: #F5F5F5;
+    font-size: 70px;
+    font-family: 'Pacifico', cursive;
+}
+
 .container {
     width: 400px;
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: space-between;
     align-items: center;
