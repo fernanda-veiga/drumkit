@@ -42,3 +42,14 @@ body {
     outline: none;
     cursor: pointer;
 }
+
+.key {
+    font-size: 30px;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+.sound {
+    font-size: 14px;
+    color: #FFD700;
+}
