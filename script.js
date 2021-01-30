@@ -1,15 +1,20 @@
 const audioFiles = document.querySelectorAll("audio");
-const buttonsNodeList = document.querySelectorAll(".button");
-let buttons = Array.from(buttonsNodeList);
+const buttons = Array.from(document.querySelectorAll(".button"));
 let keys = ["a", "s", "d", "f", "g", "h", "j", "k", "l"];
 
-//Plays sound when the button is clicked
+//Buttons' event listeners
 buttons.forEach(item => {
+    //Plays sound when the button is clicked
     item.addEventListener("click", function(){
         playSound(buttons, item);
     })
+    //Removes the transition after it is done
+    item.addEventListener("transitionend", function(){
+        removeClass(item);
+    })
 })
 
+//Keys' event listeners
 //Plays sound when key is pressed
 window.addEventListener("keydown", function(e){
     playSound(keys, e.key);
@@ -30,5 +35,10 @@ function playSound(array, item) {
 
 function addClass(i) {
     buttons[i].classList.add("clicked");
+    return;
+}
+
+function removeClass(item) {
+    item.classList.remove("clicked");
     return;
 }

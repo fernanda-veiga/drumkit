@@ -59,8 +59,7 @@ body {
     outline: none;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
-    transition: all 0.3s;
-    /*transition: transform 0.05s;*/
+    transition: all 0.05s;
 }
 
 .button:hover {
