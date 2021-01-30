@@ -19,12 +19,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 60%);
-    padding: 30px 60px;
+    padding: 30px 100px;
     border-radius: 20px;
 }
 
 .title {
-    width: 400px;
+    width: 450px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -34,15 +34,16 @@ body {
 }
 
 .instructions {
-    width: 400px;
+    width: 450px;
     margin-bottom: 30px;
     color: #F5F5F5;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
 .button-container {
-    width: 400px;
+    width: 450px;
     height: 450px;
     display: flex;
     justify-content: space-between;
@@ -51,8 +52,8 @@ body {
 }
 
 .button {
-    width: 120px;
-    height: 120px;
+    width: 30%;
+    height: 30%;
     background-color: #484848;
     border: 10px solid #FFD700;
     border-radius: 50%;
@@ -68,8 +69,8 @@ body {
 
 .clicked {
     transform: scale(1.1);
-    border: 10px solid #ff0000;
-    box-shadow: 0 0 20px #ff0000;
+    border-color: #F5F5F5;
+    box-shadow: 0 0 20px #F5F5F5;
 }
 
 .key {
@@ -81,4 +82,50 @@ body {
 .sound {
     font-size: 14px;
     color: #FFD700;
+}
+
+/*RESPONSIVITY*/
+
+@media (max-width: 650px) {
+    .container {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .title, .instructions, .button-container {
+        width: 90vw;
+    }
+
+    .button-container {
+        height: 90vw;
+    }
+
+    .button {
+        width: 27vw;
+        height: 27vw;
+        border: 2vw solid #FFD700;
+    }
+
+    .button:hover, .clicked {
+        box-shadow: 0 0 4vw #F5F5F5;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 17.5vw;
+    }
+
+    .instructions {
+        font-size: 12px;
+    }
+
+    .key {
+        font-size: 7.5vw;
+    }
+
+    .sound {
+        font-size: 3.5vw;
+    }
 }
